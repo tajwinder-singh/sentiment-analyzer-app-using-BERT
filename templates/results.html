@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(14, 17, 23);
+            text-align: center;
+            margin-top: 120px;
+        }
+
+  
+        h1 {
+            color: rgb(30, 144, 255);
+            margin-bottom: 30px;
+
+        }
+
+        .result {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: {% if prediction == "Positive Review" %}rgb(255, 56, 0){% else %}rgb(56, 255, 0){% endif %};
+        }
+
+        a{
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>🎬Movie Review Sentiment Analyzer</h1>
+    <div class="result">
+        {{ prediction }}
+    </div>
+    <a href = "{{ url_for('home') }}">← Back to Home</a>
+</body>
+</html>

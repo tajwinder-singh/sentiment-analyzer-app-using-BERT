@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Sentiment Analyzer</title>
+    <style>
+        #h1 {
+            color: rgb(30, 144, 255);
+            text-align: center;
+            margin-left: 140px;
+        }
+
+
+        body {
+            background-color: rgb(14, 17, 23);
+        }
+
+        
+        #d1 {
+            text-align: center;
+            /* position: relative; */
+            margin-left: 90px;
+            color: rgb(0, 191, 165);
+        }
+
+        #review {
+            background-color:rgb(34, 39, 49);
+            border: 1px solid rgb(60, 60, 60);
+            text-align: center;
+            position: relative;
+            left: 100px;
+            color: rgb(220, 220, 220);
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        
+        }
+
+        #button {
+            background-color: rgba(13, 161, 187, 0.696);
+            
+            margin-left: 460px;
+            padding: 1em 2em;
+        }
+
+        #button:hover {
+            background-color: rgb(6, 76, 88);
+        }
+  
+        #about {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(21, 24, 30);
+            color: whitesmoke;
+            padding: 20px;
+            padding-right: 30px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+
+        }
+        #about h2 {
+            color: rgb(30, 144, 255);
+            text-align: center;
+        }
+
+        #about p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: lightgray;            
+        }
+    </style>
+    <!-- 
+     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4); —  "2px" applies a 2-pixel shadow towards the x-axis (left to right), "0" implies; no shadow is applied to top or bottom, rgba, "10px" implies shadow will be blurred and spread out till 10px (for realistic look), rgba(0,0,0,0.4) is the black color with opacity (visibility) of 40%; which means the shadow will be of black color.
+     
+    line-height: 1.7; Gives spacing between lines.
+    -->
+
+
+</head>
+<body>
+    <div id="about">
+        <h2>About</h2>
+        <p>This app was built using Flask API and Jinja2. <br><br>Bidirectional Encoder only Transformer (BERT) was used to fine tune the 'IMDB Movie Review Dataset'.<br><br> This app predicts 'Positive' or 'Negative' as output while taking the movie reviews as input.</p>
+    </div>
+    <header>
+        <h1 id = "h1"><big>🎬Movie Review Sentiment Analyzer</big></h1><br><br><br><br>
+    </header>
+
+    <main>
+        <form action = "/predict" method = "post">
+            <div id="d1"><b><big><big><big><big>Enter review:</big></big></big></big><b/> <input id="review" name="review" type="text" required> </input></div><br><br><br><br><br><br>
+            <div id = "d2"><input id="button" type = "submit" value = "Predict"> </input></div>
+            
+    
+        </form>
+
+    </main>
+</body>
+</html>
