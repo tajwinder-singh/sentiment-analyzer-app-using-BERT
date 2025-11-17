@@ -14,14 +14,18 @@ This project fine-tunes **BERT** on the **IMDB Movie Review dataset** and deploy
    - Trained using AdamW optimizer on IMDB dataset.
    - Saved fine-tuned model and tokenizer for deployment.
 
-2. **Backend with Flask**
+2. **Evaluation Phase**
+   - Used **Expected Calibrated Error (ECE)** to understand the real calibration of the model.
+   - Used **Brier Score** to understand how close the predicted probabilities are to actual labels.
+
+3. **Backend with Flask**
    - Built Flask API with routes:
      - `/` → homepage  
      - `/predict` → handles user input and inference  
      - `/health` → quick status check  
    - Loaded model with PyTorch for on-demand predictions.
 
-3. **Frontend Interface**
+4. **Frontend Interface**
    - Created using **HTML, CSS, Jinja2**.  
    - Dark-themed UI with a clean “About” sidebar.  
    - Takes a review as input and displays prediction instantly.
