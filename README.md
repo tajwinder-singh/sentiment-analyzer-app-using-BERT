@@ -1,5 +1,9 @@
 # Movie Review Sentiment Analyzer (BERT + Flask)
 
+
+
+https://github.com/user-attachments/assets/b1b2e2a2-8ad1-4952-ba1f-64dc98bfa0e8
+
 After exploring Attention and Self-Attention, I wanted to push further — by building an **end-to-end Transformer project** for movie review sentiment analysis.
 
 This project fine-tunes **BERT** on the **IMDB Movie Review dataset** and deploys it using **Flask** as a real-time web app that predicts whether a review is **Positive** or **Negative**.
@@ -49,8 +53,5 @@ This project fine-tunes **BERT** on the **IMDB Movie Review dataset** and deploy
 **#NLP #BERT #Transformers #Flask #MachineLearning #DeepLearning #AI #DataScience #WebApp #SentimentAnalysis**
 
 
-<video src="demo.mp4
-
-https://github.com/user-attachments/assets/b1b2e2a2-8ad1-4952-ba1f-64dc98bfa0e8
 
 
